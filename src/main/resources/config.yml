@@ -1,0 +1,67 @@
+# Code by Emilio
+
+messages:
+  prefix: "&f[&6&lɢᴜᴀʀᴅɪᴀɴ&f]"
+  notify-ops-join: "&eEs gibt &f%count% &eoffene Reports. &7[&aKlicken zum Anzeigen&7]"
+  new-report-op: "&eNeuer Report &f#%id% &egegen &c%reported% &8| &fvon &a%reporter% &8| &fGrund: &6%reason% &7[&aKlicken&7]"
+  list-header: "&6&lOffene Reports (&f%count%&6&l):"
+  list-format: "&7#&e%id% &8| &fReporter: &a%reporter% &8| &fReported: &c%reported% &8| &fGrund: &6%reason%"
+  created: "&aDein Report wurde erstellt. &7(ID: &f#%id%&7)"
+  completed-admin: "&aReport &f#%id% &awurde geschlossen."
+  completed-reporter: "&aDein Report &f#%id% &awurde bearbeitet."
+  reload: "&aKonfiguration neu geladen."
+  no-permission: "&cDazu hast du keine Rechte."
+  usage-report: "&7Verwendung: &f/report <spieler>"
+  usage-complete: "&7Verwendung: &f/guardian complete <id>"
+  usage-history: "&7Verwendung: &f/guardian history <spieler>"
+  not-found: "&cKein Report mit dieser ID."
+  no-open-reports: "&7Es gibt aktuell keine offenen Reports."
+  player-not-online: "&cSpieler nicht online."
+
+storage:
+  file: "reports.yml"
+
+gui:
+  title: "&6&lWähle einen Grund"
+  size: 27
+
+cooldown:
+  hours: 2
+  message: "&cDu kannst erst in &f%time% &cwieder reporten."
+
+history:
+  header: "&6&lReport-Historie für &f%player% &6&l(&f%count%&6&l):"
+  line: "&7#&e%id% &8| &fReporter: &a%reporter% &8| &fGrund: &6%reason% &8| &fZeit: &7%time% &8| &fStatus: &7%status%"
+  empty: "&7Keine Einträge für diesen Spieler."
+
+reasons:
+  CHEATING:
+    name: "&c&lCheating"
+    material: "NETHER_STAR"
+    lore:
+      - "&7Unfaire Vorteile (KillAura, Fly, Speed)"
+  INSULT:
+    name: "&6&lBeleidigungen"
+    material: "BOOK"
+    lore:
+      - "&7Respektloses Verhalten im Chat"
+  BUG_ABUSE:
+    name: "&e&lBug Abuse"
+    material: "FERMENTED_SPIDER_EYE"
+    lore:
+      - "&7Ausnutzen von Fehlern/Glitches"
+  GRIEFING:
+    name: "&b&lGriefing"
+    material: "TNT"
+    lore:
+      - "&7Zerstörung oder Troll-Verhalten"
+  SPAM:
+    name: "&f&lSpam"
+    material: "PAPER"
+    lore:
+      - "&7Chat-Spam oder Werbung"
+  OTHER:
+    name: "&a&lSonstiges"
+    material: "ENDER_EYE"
+    lore:
+      - "&7Anderer Grund"

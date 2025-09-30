@@ -1,0 +1,20 @@
+name: Guardian
+version: '1.0.0'
+main: de.emilio.guardian.Main
+api-version: '1.21'
+author: Emilio
+description: Report system with GUI, YAML storage and admin tools.
+commands:
+  report:
+    description: Open the report GUI for a player
+    usage: /report <player>
+    permission: guardian.use
+  guardian:
+    description: Admin tools for reports
+    usage: /guardian <list|complete|reload|help>
+    permission: guardian.admin
+permissions:
+  guardian.use:
+    default: true
+  guardian.admin:
+    default: op
